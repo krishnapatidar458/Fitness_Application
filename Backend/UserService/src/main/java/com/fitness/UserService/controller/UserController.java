@@ -25,4 +25,11 @@ public class UserController {
         // Implementation for fetching user by ID
         return ResponseEntity.ok(userService.getUserProfile(userId));
     }
+
+    @GetMapping("/{userId}/validate")
+    public ResponseEntity<Boolean> validateUserById(@PathVariable String userId) {
+        // Implementation for fetching user by ID
+        return ResponseEntity.ok(userService.validateUserById(userId));
+    }
+
 }

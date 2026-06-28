@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user-service
+    name: userservice
 
   datasource:
     url: jdbc:postgresql://fitness-user-db:5432/fitness_user_db

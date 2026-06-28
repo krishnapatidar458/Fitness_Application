@@ -58,4 +58,9 @@ public class UserServiceImpl implements UserService {
                 .updatedAt(user.getUpdatedAt())
                 .build();
     }
+
+    @Override
+    public Boolean validateUserById(String userId) {
+        return userRepository.existsById(userId);
+    }
 }

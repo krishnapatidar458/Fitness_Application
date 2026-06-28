@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ActivityService
+
+
+  data:
+    mongodb:
+      uri: mongodb://krishna:password@localhost:27018/activitydb?authSource=admin
+      auto-index-creation: true
